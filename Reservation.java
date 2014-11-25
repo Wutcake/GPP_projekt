@@ -7,9 +7,9 @@ package GPP_projekt;
  */
 public class Reservation
 {
-    Forestilling forestilling;
+    Show forestilling;
     Kunde kunde;
-    Sæder sæder;
+    ReservedSeats sæder;
     public Reservation()
     {
     }
