@@ -1,0 +1,4 @@
+database: Widere_Biograf
+
+usrname: Heriette_Hess
+pssword: Henning_Torsten
