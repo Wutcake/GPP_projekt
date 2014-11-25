@@ -7,10 +7,11 @@ package GPP_projekt;
  */
 public class Reservation
 {
-    Show forestilling;
-    Kunde kunde;
+    Show show;
+    Customer customer;
     ReservedSeats sæder;
-    public Reservation()
-    {
+    public Reservation(Show show, ReservedSeats seats, String name, int phoneNumber){
+        this.show = show;
+        this.customer = new Customer(name, phoneNumber);
     }
 }
