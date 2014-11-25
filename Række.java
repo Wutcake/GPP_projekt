@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class Række
 {
     ArrayList<Sæde> sæde;
+    // HEY GIT, YOU GETTING THIS
     public Række()
     {
     }
