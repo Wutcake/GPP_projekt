@@ -1,3 +1,5 @@
+package GPP_projekt;
+
 
 /**
  * Write a description of class Sæde here.

@@ -1,4 +1,4 @@
-
+package GPP_projekt;
 /**
  * Write a description of class Dato here.
  * 
