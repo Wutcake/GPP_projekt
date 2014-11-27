@@ -17,16 +17,18 @@ public class Theater
         this.theaterNumber = theaterNumber;
     }
     
+    //Theater methods
+    public int getTheaterNumber(){
+        return theaterNumber;
+    }
+    
+    // Seat methods
     public int getSeatNumber(int row, int column){
         return seatRows.get(row).getSeatNumber(column);
     }
     
     public int getReservationID(int row, int column){
         return seatRows.get(row).getSeatReservationID(column);
-    }
-    
-    public int getTheaterNumber(){
-        return theaterNumber;
     }
     
     public int getRowAmount(){
@@ -36,6 +38,14 @@ public class Theater
     public int getRowLength(){
         return seatRows.get(0).getLength();
     }
+    
+    /**public Seat getSeat(int row, int column){
+        return seatRows.get(row).get(column);
+    }
+    */
+
+    
+
     
 
 }

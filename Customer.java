@@ -9,9 +9,13 @@ public class Customer
 {
     PhoneNumber phoneNumber;
     Name name;
+    int reservationID;
+    
     public Customer(String name, int phoneNumber){
         this.name = new Name(name);
         this.phoneNumber = new PhoneNumber(phoneNumber);
+        // Generate reservation ID based on database
+        reservationID = 1;
     }
     
     public String getName(){
@@ -20,6 +24,10 @@ public class Customer
     
     public int getPhoneNumber(){
         return phoneNumber.getPhoneNumber();
+    }
+    
+    public int getReservationID(){
+        return reservationID;
     }
     
 }

@@ -7,11 +7,31 @@ package GPP_projekt;
  */
 public class Reservation
 {
-    Show show;
+    Screening screening;
     Customer customer;
-    ReservedSeats sæder;
-    public Reservation(Show show, ReservedSeats seats, String name, int phoneNumber){
-        this.show = show;
+    ReservedSeats seats;
+    public Reservation(Screening screening, String name, int phoneNumber){
+        this.screening = screening;
         this.customer = new Customer(name, phoneNumber);
     }
+    
+    public int getPhoneNumber(){
+        return customer.getPhoneNumber();
+    }
+    
+    public String getName(){
+        return customer.getName();
+    }
+    
+    // reservation methods
+    public void reserveNewSeat(Seat seat){
+        seats.reserveNewSeat(seat, customer.getReservationID());
+    }
+   
+    public ReservedSeats getSeats(){
+        return seats;
+    }
+    
+    
+    
 }

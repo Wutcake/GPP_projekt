@@ -15,6 +15,12 @@ public class ReservedSeats
         
         
     }
-    // Send reserved seats to database.
+
+    public void reserveNewSeat(Seat seat, int ID){
+        // Send reserved seats to database. somewhere in here or in seat
+        seat.setReservationID(ID);
+        seats.add(seat);
+    }
+    
     
 }
