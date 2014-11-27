@@ -11,6 +11,8 @@ public class Screening
     private Theater theater;
     private Time time;
     private Date date;
+    private int screeningID;
+    
     
     public Screening(Movie movie, Theater theater, Time time, Date date){
         this.movie = movie;
@@ -18,6 +20,11 @@ public class Screening
         this.time = time;
         this.date = date;    
     }
+    // Screening methods
+    public void setScreeningID(int ID){
+        screeningID = ID;
+    }
+    
     
     // Theater accessor methods
     public int getTheaterNumber(){
